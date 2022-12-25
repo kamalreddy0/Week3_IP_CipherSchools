@@ -10,45 +10,18 @@
     <script type="module">
       import pencilBox from "./pencilBox.js";
 
-const newPencilBox = new pencilBox(
-    "pencil Box",
-    30,
-    "red",
-    12,
-    12,
-    24,
-    false
-);
+      const newPencilBox = new pencilBox(
+        "pencil Box",
+        30,
+        "red",
+        12,
+        12,
+        24,
+        false
+      );
 
-console.log("The Pencil Box Object:", newPencilBox);
-console.log("Size:", newPencilBox.size);
-      class pencilBox {
-        constructor(
-          name,
-          size,
-          color,
-          zipLengthLeft,
-          zipLengthRight,
-          zipLengthTop,
-          zipOpen
-        ) {
-          this.name = name;
-          this.size = size;
-          this.color = color;
-          this.zipLength = {
-            left: zipLengthLeft,
-            right: zipLengthRight,
-            top: zipLengthTop,
-          };
-          this.zipOpen = zipOpen;
-        }
-
-        toggleZip(zipStatus) {
-          this.zipOpen = zipStatus;
-        }
-      }
-
-      export default pencilBox;
+      console.log("The Pencil Box Object:", newPencilBox);
+      console.log("Size:", newPencilBox.size);
     </script>
   </body>
 </html>
